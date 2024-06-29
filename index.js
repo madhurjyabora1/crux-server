@@ -1,5 +1,5 @@
 import express from "express";
-import { cruxReportRoutes } from "./routes/cruxReportRoutes";
+import { cruxReportRoutes } from "./routes/cruxReportRoutes.js";
 import cors from "cors";
 
 const app = express();

@@ -26,7 +26,6 @@ export async function getCruxReport(req, res) {
     res.json(response.data.record.metrics);
   } catch (error) {
     console.log("error", error.response ? error.response.data : error.message);
-
     if (error.response) {
       res.status(error.response.status).json(error.response.data);
     } else {

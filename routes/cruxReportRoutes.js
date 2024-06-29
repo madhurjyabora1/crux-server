@@ -1,5 +1,5 @@
 import express from "express";
-import { getCruxReport } from "../controller/cruxReportController";
+import { getCruxReport } from "../controller/cruxReportController.js";
 
 const router = express.Router();
 
