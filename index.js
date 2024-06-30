@@ -4,13 +4,7 @@ import cors from "cors";
 const app = express();
 const PORT = process.env.PORT || 3001;
 app.use(express.json());
-// app.use(
-//   cors({
-//     origin: "https://brightedge.madhurjyabora.com",
-//     methods: ["GET", "POST", "OPTIONS"],
-//     allowedHeaders: ["Content-Type", "Authorization"],
-//   })
-// );
+
 app.use(cors())
 app.use("/api", cruxReportRoutes);
 app.use("/", (req, res) => {
